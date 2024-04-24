@@ -22,7 +22,7 @@ vim \
 build-essential \
 software-properties-common
 
-RUN sh ./l_BaseToolKit_2021.1.sh --silent --eula accept --components intel.oneapi.lin.tbb.devel
+RUN sudo apt-get install intel-tbb-2021.5-1.738
 
 # Install apt-utils
 RUN apt-get install -y apt-utils
