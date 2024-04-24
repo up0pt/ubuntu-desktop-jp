@@ -22,8 +22,6 @@ vim \
 build-essential \
 software-properties-common
 
-RUN apt-get install intel-tbb-2021.5-1.738
-
 # Install apt-utils
 RUN apt-get install -y apt-utils
 
