@@ -12,6 +12,18 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
 # Install packages
 RUN apt-get update
 
+RUN apt-get upgrade
+
+# install additional packs for me
+
+RUN apt install -y \
+git \
+vim \
+build-essential \
+software-properties-common
+
+RUN sh ./l_BaseToolKit_2021.1.sh --silent --eula accept --components intel.oneapi.lin.tbb.devel
+
 # Install apt-utils
 RUN apt-get install -y apt-utils
 
