@@ -55,5 +55,5 @@ $ docker run \
     -v "$(pwd)/data/config:/root/.config" \
     -v "$(pwd)/data/Desktop:/root/Desktop" \
     -p 8080:8080 \
-    uphy/ubuntu-desktop-jp:20.04
+    ubuntu-desktop-dse-1
 ```
