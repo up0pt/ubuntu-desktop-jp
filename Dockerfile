@@ -12,7 +12,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
 # Install packages
 RUN apt-get update
 
-RUN apt-get upgrade
+RUN apt update
 
 # install additional packs for me
 
